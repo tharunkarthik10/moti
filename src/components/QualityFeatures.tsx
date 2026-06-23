@@ -2,21 +2,31 @@ export default function QualityFeatures() {
   return (
     <>
       {/* Quality Commitment */}
-      <section className="bg-on-surface text-stark-white py-20 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-1/3 h-full bg-industrial-yellow/5 skew-x-[-20deg] translate-x-20"></div>
-        <div className="max-w-container-max mx-auto px-gutter text-center space-y-6">
-          <span className="font-status-code text-status-code text-industrial-yellow uppercase tracking-widest">
+      <section className="bg-surface-container-low py-20 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-1/3 h-full bg-industrial-yellow/10 skew-x-[-20deg] translate-x-20 z-0"></div>
+        
+        {/* Background Signature Watermark */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-[0.12] pointer-events-none z-0 select-none mix-blend-multiply">
+          <img 
+            src="/signature.png" 
+            alt="Signature" 
+            className="w-full max-w-[1000px] -rotate-[8deg] scale-110"
+          />
+        </div>
+
+        <div className="max-w-container-max mx-auto px-gutter text-center space-y-6 relative z-10">
+          <span className="font-status-code text-status-code text-industrial-yellow uppercase tracking-widest font-bold">
             ZERO_DEFECT_POLICY
           </span>
-          <h2 className="font-headline-xl text-[56px] text-stark-white">Quality Comes First</h2>
-          <p className="font-body-lg text-outline-variant max-w-3xl mx-auto">
+          <h2 className="font-headline-xl text-[56px] text-on-surface">Quality Comes First</h2>
+          <p className="font-body-lg text-on-surface-variant max-w-3xl mx-auto">
             At MOTI, we believe that precision isn't just a metric—it's a commitment. Every piece of equipment leaving our facility undergoes a 128-point diagnostic check to ensure zero-fault deployment.
           </p>
           <div className="flex justify-center gap-4 pt-4">
-            <span className="px-4 py-2 border border-outline-muted font-status-code text-status-code uppercase">
+            <span className="px-4 py-2 border border-outline-variant font-status-code text-status-code text-on-surface-variant uppercase font-bold">
               ISO 9001 CERTIFIED
             </span>
-            <span className="px-4 py-2 border border-outline-muted font-status-code text-status-code uppercase">
+            <span className="px-4 py-2 border border-outline-variant font-status-code text-status-code text-on-surface-variant uppercase font-bold">
               CE COMPLIANT
             </span>
           </div>

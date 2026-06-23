@@ -4,14 +4,9 @@ export default function Header() {
       <nav className="flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto">
         <a href="/" className="flex items-center gap-3">
           <img 
-            src="/arrow.png" 
-            alt="Moti" 
-            className="h-[42px] md:h-[54px] w-auto object-contain contrast-125 saturate-110 drop-shadow-sm brightness-105"
-          />
-          <img 
-            src="/text.png" 
-            alt="Equipments" 
-            className="h-14 md:h-[72px] w-auto object-contain contrast-125 saturate-110 drop-shadow-sm brightness-105"
+            src="/final_combined_logo_transparent.png" 
+            alt="Moti Equipments" 
+            className="h-[63px] md:h-[81px] w-auto max-w-none flex-shrink-0 object-contain contrast-125 saturate-110 drop-shadow-sm brightness-105"
           />
         </a>
         <div className="hidden md:flex items-center gap-8">

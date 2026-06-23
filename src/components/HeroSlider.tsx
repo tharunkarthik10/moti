@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 
 export default function HeroSlider() {
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   return (
     <section className="relative w-full overflow-visible">
       <div className="relative max-w-container-max mx-auto">
         <Swiper
+          onSwiper={setSwiperInstance}
           modules={[Navigation, Autoplay, EffectFade]}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           speed={1000}
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -40,10 +43,18 @@ export default function HeroSlider() {
                   Providing end-to-end material handling and automation solutions for a more resilient supply chain.
                 </p>
                 <div className="flex gap-6 pt-4">
-                  <button className="bg-industrial-yellow text-on-surface px-8 py-4 font-label-caps text-label-caps border-b-4 border-primary hover:translate-y-[-1px] transition-all">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white text-on-surface px-8 py-4 font-label-caps text-label-caps border border-outline hover:bg-industrial-yellow hover:border-industrial-yellow hover:translate-y-[-1px] transition-all"
+                  >
                     Request A Quote
                   </button>
-                  <button className="border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-surface-container transition-all flex items-center gap-2">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-industrial-yellow hover:border-industrial-yellow transition-all flex items-center gap-2"
+                  >
                     View Products <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </button>
                 </div>
@@ -83,10 +94,18 @@ export default function HeroSlider() {
                   Innovative material handling solutions engineered to drive efficiency, safety, and growth in your daily operations.
                 </p>
                 <div className="flex gap-6 pt-4">
-                  <button className="bg-industrial-yellow text-on-surface px-8 py-4 font-label-caps text-label-caps border-b-4 border-primary hover:translate-y-[-1px] transition-all">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white text-on-surface px-8 py-4 font-label-caps text-label-caps border border-outline hover:bg-industrial-yellow hover:border-industrial-yellow hover:translate-y-[-1px] transition-all"
+                  >
                     Request A Quote
                   </button>
-                  <button className="border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-surface-container transition-all flex items-center gap-2">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-industrial-yellow hover:border-industrial-yellow transition-all flex items-center gap-2"
+                  >
                     View Products <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </button>
                 </div>
@@ -126,10 +145,18 @@ export default function HeroSlider() {
                   Innovative material handling solutions engineered to drive efficiency, safety, and growth in your daily operations.
                 </p>
                 <div className="flex gap-6 pt-4">
-                  <button className="bg-industrial-yellow text-on-surface px-8 py-4 font-label-caps text-label-caps border-b-4 border-primary hover:translate-y-[-1px] transition-all">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white text-on-surface px-8 py-4 font-label-caps text-label-caps border border-outline hover:bg-industrial-yellow hover:border-industrial-yellow hover:translate-y-[-1px] transition-all"
+                  >
                     Request A Quote
                   </button>
-                  <button className="border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-surface-container transition-all flex items-center gap-2">
+                  <button 
+                    onMouseEnter={() => swiperInstance?.autoplay?.stop()}
+                    onMouseLeave={() => swiperInstance?.autoplay?.start()}
+                    className="bg-white border border-outline px-8 py-4 font-label-caps text-label-caps hover:bg-industrial-yellow hover:border-industrial-yellow transition-all flex items-center gap-2"
+                  >
                     View Products <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </button>
                 </div>
