@@ -1,6 +1,65 @@
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+
 export default function QualityFeatures() {
+  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+
+  const clients = [
+    'bisleri.png', 'asian.png', 'mainetti.png', 'ups.png', 'vaya.png',
+    'funskool.png', 'tasmac.png', 'ss.png', 'tgi.png', 'aht.png',
+    'KH.png', 'spar.png', 'ual.png', 'sks.png', 'pachaiyappas-silks.png',
+    'KUS.png', 'anthocyan.png', 'cape.png', 'magikwoods.png'
+  ];
+
   return (
     <>
+      {/* Client Showcase */}
+      <section className="bg-stark-white py-16 border-t border-outline-variant">
+        <div className="max-w-container-max mx-auto px-gutter">
+          <div className="text-center mb-10">
+            <p className="font-label-caps text-[14px] text-on-surface-variant">They Always Trust Us</p>
+            <h3 className="font-headline-lg text-[32px] text-on-surface mt-1">
+              OUR CLIENTS<span className="text-industrial-yellow">.</span>
+            </h3>
+          </div>
+          <div 
+            className="pb-6 pt-4 px-4"
+            onMouseEnter={() => {
+              if (swiperInstance && swiperInstance.autoplay) swiperInstance.autoplay.pause();
+            }}
+            onMouseLeave={() => {
+              if (swiperInstance && swiperInstance.autoplay) swiperInstance.autoplay.start();
+            }}
+          >
+            <Swiper
+              onSwiper={setSwiperInstance}
+              modules={[FreeMode, Autoplay]}
+              slidesPerView="auto"
+              spaceBetween={64}
+              loop={true}
+              allowTouchMove={false}
+              freeMode={{ enabled: true, momentum: false }}
+              speed={3500}
+              autoplay={{ delay: 0, disableOnInteraction: false }}
+              className="clientsSwiper"
+            >
+              {clients.map((client, idx) => (
+                <SwiperSlide key={idx} className="!w-auto">
+                  <img
+                    alt={client.split('.')[0]}
+                    className="h-20 md:h-24 w-auto object-contain flex-shrink-0"
+                    src={`https://motiequipments.com/assets/images/clients/${client}`}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
       {/* Quality Commitment */}
       <section className="bg-surface-container-low py-20 relative overflow-hidden">
         <div className="absolute right-0 top-0 w-1/3 h-full bg-industrial-yellow/10 skew-x-[-20deg] translate-x-20 z-0"></div>
@@ -8,9 +67,9 @@ export default function QualityFeatures() {
         {/* Background Signature Watermark */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.12] pointer-events-none z-0 select-none mix-blend-multiply">
           <img 
-            src="/signature.png" 
+            src="/signature_new.png" 
             alt="Signature" 
-            className="w-full max-w-[1000px] -rotate-[8deg] scale-110"
+            className="w-full max-w-[800px] -rotate-[8deg] translate-y-8 -translate-x-8"
           />
         </div>
 

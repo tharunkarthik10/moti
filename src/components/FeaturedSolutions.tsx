@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, FreeMode } from 'swiper/modules';
+import { Navigation, Mousewheel, FreeMode } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
 
 export default function FeaturedSolutions() {
   const services = [
@@ -36,22 +37,36 @@ export default function FeaturedSolutions() {
   return (
     <section className="bg-stark-white py-section-padding border-y border-outline-variant">
       <div className="max-w-container-max mx-auto px-gutter">
-        <div className="text-center mb-16">
-          <h2 className="font-headline-xl text-[36px] md:text-[48px] text-center text-on-surface uppercase mb-4 tracking-wide font-bold">
-            Industrial Material<br />Handling Solutions<span className="text-industrial-yellow">.</span>
-          </h2>
-          <p className="text-center font-body-md text-[16px] text-on-surface-variant italic max-w-3xl mx-auto">
-            Apart From MHE Manufacturing, Moti Equipments deals in supply of all kind of conveyor equipment spare sales & services.
-          </p>
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16">
+          <div className="space-y-4 max-w-3xl">
+            <h2 className="font-headline-xl text-[36px] md:text-[48px] text-on-surface uppercase tracking-wide font-bold leading-tight">
+              Industrial Material<br />Handling Solutions<span className="text-industrial-yellow">.</span>
+            </h2>
+            <p className="font-body-md text-[16px] text-on-surface-variant italic">
+              Apart From MHE Manufacturing, Moti Equipments deals in supply of all kind of conveyor equipment spare sales & services.
+            </p>
+          </div>
+          <div className="flex gap-4 items-center mt-6 lg:mt-0">
+            <button className="feat-prev w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-industrial-yellow transition-all rounded-full disabled:opacity-50">
+              <span className="material-symbols-outlined text-[20px]">chevron_left</span>
+            </button>
+            <button className="feat-next w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-industrial-yellow transition-all rounded-full disabled:opacity-50">
+              <span className="material-symbols-outlined text-[20px]">chevron_right</span>
+            </button>
+          </div>
         </div>
 
         <Swiper
-          modules={[Mousewheel, FreeMode]}
+          modules={[Navigation, Mousewheel, FreeMode]}
           slidesPerView={1}
           spaceBetween={40}
           freeMode={true}
           speed={800}
           mousewheel={{ forceToAxis: true, sensitivity: 1, releaseOnEdges: true }}
+          navigation={{
+            nextEl: '.feat-next',
+            prevEl: '.feat-prev',
+          }}
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },

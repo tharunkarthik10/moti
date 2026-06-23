@@ -32,4 +32,9 @@
   .nav-underline-effect:hover::after {
       width: 100%;
   }
+
+  /* Continuous Marquee CSS */
+  .clientsSwiper .swiper-wrapper {
+      transition-timing-function: linear !important;
+  }
 }

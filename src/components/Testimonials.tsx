@@ -1,17 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, FreeMode, Autoplay } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/free-mode';
+import Partners from './Partners';
 
 export default function Testimonials() {
-  const clients = [
-    'bisleri.png', 'asian.png', 'mainetti.png', 'ups.png', 'vaya.png',
-    'funskool.png', 'tasmac.png', 'ss.png', 'tgi.png', 'aht.png',
-    'KH.png', 'spar.png', 'ual.png', 'sks.png', 'pachaiyappas-silks.png',
-    'KUS.png', 'anthocyan.png', 'cape.png', 'magikwoods.png'
-  ];
-
   return (
     <>
       <section className="bg-surface-bone pt-12 pb-section-padding">
@@ -82,40 +71,9 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Client Showcase */}
-      <section className="bg-stark-white py-16 border-t border-outline-variant">
-        <div className="max-w-container-max mx-auto px-gutter">
-          <div className="text-center mb-10">
-            <p className="font-label-caps text-[14px] text-on-surface-variant">They Always Trust Us</p>
-            <h3 className="font-headline-lg text-[32px] text-on-surface mt-1">
-              OUR CLIENTS<span className="text-industrial-yellow">.</span>
-            </h3>
-          </div>
-          <div className="pb-6 pt-4 px-4">
-            <Swiper
-              modules={[Mousewheel, FreeMode, Autoplay]}
-              slidesPerView="auto"
-              spaceBetween={64}
-              loop={true}
-              freeMode={true}
-              speed={2000}
-              autoplay={{ delay: 0, disableOnInteraction: false }}
-              mousewheel={{ forceToAxis: true, sensitivity: 1 }}
-              className="clientsSwiper"
-            >
-              {clients.map((client, idx) => (
-                <SwiperSlide key={idx} className="!w-auto">
-                  <img
-                    alt={client.split('.')[0]}
-                    className="h-20 md:h-24 w-auto object-contain flex-shrink-0"
-                    src={`https://motiequipments.com/assets/images/clients/${client}`}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section>
+
+
+      <Partners />
 
       {/* CTA Section */}
       <section className="bg-surface-bone py-24 border-t border-outline-variant">
