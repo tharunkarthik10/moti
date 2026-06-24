@@ -6,6 +6,8 @@ import FeaturedSolutions from './components/FeaturedSolutions'
 import QualityFeatures from './components/QualityFeatures'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
+import Clients from './components/Clients'
+import ContactBanner from './components/ContactBanner'
 
 function App() {
   return (
@@ -14,10 +16,12 @@ function App() {
       <main className="elegant-grid pt-10 overflow-x-hidden">
         <HeroSlider />
         <AboutSection />
+        <Clients />
         <Technologies />
         <FeaturedSolutions />
         <QualityFeatures />
         <Testimonials />
+        <ContactBanner />
       </main>
       <Footer />
     </div>

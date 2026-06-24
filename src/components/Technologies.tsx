@@ -19,7 +19,7 @@ export default function Technologies() {
 
   return (
     <section className="bg-surface-container-lowest">
-      <div className="max-w-container-max mx-auto px-gutter py-section-padding">
+      <div className="max-w-container-max mx-auto px-gutter pt-8 pb-section-padding">
         <div className="flex justify-between items-end mb-12">
           <div className="space-y-2">
             <span className="font-status-code text-status-code text-primary uppercase">CATALOG_01</span>
