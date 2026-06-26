@@ -13,6 +13,7 @@ export default function HeroSlider() {
     <section className="relative w-full overflow-visible">
       <div className="relative max-w-container-max mx-auto">
         <Swiper
+          className="!overflow-visible"
           onSwiper={setSwiperInstance}
           modules={[Navigation, Autoplay, EffectFade]}
           effect="fade"
@@ -27,17 +28,17 @@ export default function HeroSlider() {
             prevEl: '.hero-prev',
           }}
           loop={true}
-          className="heroSwiper w-full min-h-[calc(100vh-120px)]"
+          className="heroSwiper w-full min-h-[calc(100vh-180px)]"
         >
           {/* Slide 1 */}
           <SwiperSlide className="bg-transparent">
-            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-120px)]">
+            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-180px)]">
               <div className="flex-1 space-y-8">
                 <div className="inline-block bg-on-surface text-industrial-yellow px-3 py-1 font-status-code text-status-code uppercase tracking-widest">
                   DELIVERING :: PROFESSIONAL_EXPERTISE
                 </div>
-                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight">
-                  Creating <span className="text-primary italic">Sustainable</span> Value
+                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight uppercase font-black">
+                  Creating <span className="text-primary">Sustainable</span> Value
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
                   Providing end-to-end material handling and automation solutions for a more resilient supply chain.
@@ -64,16 +65,21 @@ export default function HeroSlider() {
                 <div className="absolute bottom-0 left-0 w-64 h-64 border-b-2 border-l-2 border-outline-variant opacity-30"></div>
 
                 <div className="relative w-4/5 lg:w-[85%] aspect-square bg-stark-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] flex items-center justify-center p-8 transition-all duration-700">
+                  <img 
+                    src="/assets/images/certs/iso.png" 
+                    alt="ISO Certified" 
+                    className="absolute -top-12 -right-12 w-28 h-28 object-contain drop-shadow-lg z-20 hover:scale-105 transition-transform"
+                  />
                   <img
-                    alt="High-Rise Electric Stacker"
-                    className="w-full h-full object-contain mix-blend-multiply scale-125 transition-transform duration-700 hover:scale-[1.35]"
-                    src="https://motiequipments.com/assets/images/shop/standard/2.png"
+                    alt="Pallet Stretch Wrapping Machine"
+                    className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
+                    src="/assets/images/hero/hl-series-pallet-stretch-wrapping-machine.jpg"
                   />
                   <div className="absolute top-6 right-6 bg-stark-white/85 backdrop-blur-md p-4 border-l-4 border-industrial-yellow shadow-sm">
                     <span className="font-status-code text-[10px] uppercase tracking-widest text-outline-muted block mb-1">
                       EQUIPMENT_MODEL
                     </span>
-                    <span className="font-label-caps text-[14px] text-on-surface">AC-POWER STACKER</span>
+                    <span className="font-label-caps text-[14px] text-on-surface">PALLET WRAPPING MACHINE</span>
                   </div>
                 </div>
               </div>
@@ -82,13 +88,13 @@ export default function HeroSlider() {
 
           {/* Slide 2 */}
           <SwiperSlide className="bg-transparent">
-            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-120px)]">
+            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-180px)]">
               <div className="flex-1 space-y-8">
                 <div className="inline-block bg-on-surface text-industrial-yellow px-3 py-1 font-status-code text-status-code uppercase tracking-widest">
                   WE ARE THE :: PIONEERS
                 </div>
-                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight">
-                  Moving Towards <br /> <span className="text-primary italic">"Your Success"</span>
+                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight uppercase font-black">
+                  Moving Towards Your Success
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
                   Innovative material handling solutions engineered to drive efficiency, safety, and growth in your daily operations.
@@ -115,16 +121,21 @@ export default function HeroSlider() {
                 <div className="absolute bottom-0 left-0 w-64 h-64 border-b-2 border-l-2 border-outline-variant opacity-30"></div>
 
                 <div className="relative w-4/5 lg:w-[85%] aspect-square bg-stark-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] flex items-center justify-center p-8 transition-all duration-700">
+                  <img 
+                    src="/assets/images/certs/iso.png" 
+                    alt="ISO Certified" 
+                    className="absolute -top-12 -right-12 w-28 h-28 object-contain drop-shadow-lg z-20 hover:scale-105 transition-transform"
+                  />
                   <img
-                    alt="Electric Pallet Truck"
-                    className="w-full h-full object-contain mix-blend-multiply scale-125 transition-transform duration-700 hover:scale-[1.35]"
-                    src="https://motiequipments.com/assets/images/shop/standard/3.png"
+                    alt="Rubber Moulding Machine"
+                    className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
+                    src="/assets/images/hero/rubber-moulding-machines.jpg"
                   />
                   <div className="absolute top-6 right-6 bg-stark-white/85 backdrop-blur-md p-4 border-l-4 border-industrial-yellow shadow-sm">
                     <span className="font-status-code text-[10px] uppercase tracking-widest text-outline-muted block mb-1">
                       EQUIPMENT_MODEL
                     </span>
-                    <span className="font-label-caps text-[14px] text-on-surface">15EP ELECTRIC JACK</span>
+                    <span className="font-label-caps text-[14px] text-on-surface">RUBBER MOULDING MACHINE</span>
                   </div>
                 </div>
               </div>
@@ -133,13 +144,13 @@ export default function HeroSlider() {
 
           {/* Slide 3 */}
           <SwiperSlide className="bg-transparent">
-            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-120px)]">
+            <div className="px-gutter py-section-padding flex flex-col md:flex-row items-center gap-16 min-h-[calc(100vh-180px)]">
               <div className="flex-1 space-y-8">
                 <div className="inline-block bg-on-surface text-industrial-yellow px-3 py-1 font-status-code text-status-code uppercase tracking-widest">
                   WE ARE THE :: PIONEERS
                 </div>
-                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight">
-                  Moving Towards <br /> <span className="text-primary italic">"Your Future"</span>
+                <h1 className="font-headline-xl text-headline-xl text-on-surface leading-tight uppercase font-black">
+                  Moving Towards Your Future
                 </h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
                   Innovative material handling solutions engineered to drive efficiency, safety, and growth in your daily operations.
@@ -166,16 +177,21 @@ export default function HeroSlider() {
                 <div className="absolute bottom-0 left-0 w-64 h-64 border-b-2 border-l-2 border-outline-variant opacity-30"></div>
 
                 <div className="relative w-4/5 lg:w-[85%] aspect-square bg-stark-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] flex items-center justify-center p-8 transition-all duration-700">
+                  <img 
+                    src="/assets/images/certs/iso.png" 
+                    alt="ISO Certified" 
+                    className="absolute -top-12 -right-12 w-28 h-28 object-contain drop-shadow-lg z-20 hover:scale-105 transition-transform"
+                  />
                   <img
-                    alt="Hand Pallet Truck"
-                    className="w-full h-full object-contain mix-blend-multiply scale-125 transition-transform duration-700 hover:scale-[1.35]"
-                    src="https://motiequipments.com/assets/images/shop/standard/1.png"
+                    alt="CNC Machine"
+                    className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
+                    src="/assets/images/hero/cnc2.jpeg"
                   />
                   <div className="absolute top-6 right-6 bg-stark-white/85 backdrop-blur-md p-4 border-l-4 border-industrial-yellow shadow-sm">
                     <span className="font-status-code text-[10px] uppercase tracking-widest text-outline-muted block mb-1">
                       EQUIPMENT_MODEL
                     </span>
-                    <span className="font-label-caps text-[14px] text-on-surface">HAND PALLET TRUCK</span>
+                    <span className="font-label-caps text-[14px] text-on-surface">CNC MACHINE</span>
                   </div>
                 </div>
               </div>

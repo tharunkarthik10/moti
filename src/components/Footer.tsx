@@ -117,11 +117,9 @@ export default function Footer() {
           <p className="text-xs font-semibold text-gray-400">
             © 2024 HITECH Engineering. All Rights Reserved. ISO 9001:2015 Certified Company.
           </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a href="#" className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-[10px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Sitemap</a>
-          </div>
+          <p className="text-xs font-semibold text-gray-400">
+            Designed and developed by <span className="text-industrial-yellow">ACALA SOLUTIONS</span>
+          </p>
         </div>
       </div>
     </footer>

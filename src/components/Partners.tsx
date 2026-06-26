@@ -41,7 +41,7 @@ export default function Partners() {
           <div className="lg:w-5/12">
             <h2 className="font-headline-xl text-[56px] text-on-surface leading-tight mb-2">Our Partners</h2>
             <p className="font-body-lg text-[28px] text-on-surface-variant leading-snug">
-              MOTI Operates in <br /> following countries
+              HITECH ENGINEERING Operates in <br /> following countries
             </p>
           </div>
 

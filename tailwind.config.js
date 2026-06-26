@@ -76,14 +76,15 @@ export default {
         "unit": "8px"
       },
       "fontFamily": {
-        "headline-xl": ["Space Grotesk"],
-        "status-code": ["Space Grotesk"],
-        "body-lg": ["Space Grotesk"],
-        "label-caps": ["Space Grotesk"],
-        "headline-lg": ["Space Grotesk"],
-        "body-md": ["Space Grotesk"],
-        "headline-lg-mobile": ["Space Grotesk"],
-        "price-display": ["Space Grotesk"]
+        "headline-xl": ["Montserrat", "sans-serif"],
+        "status-code": ["Montserrat", "sans-serif"],
+        "body-lg": ["Montserrat", "sans-serif"],
+        "label-caps": ["Montserrat", "sans-serif"],
+        "headline-lg": ["Montserrat", "sans-serif"],
+        "body-md": ["Montserrat", "sans-serif"],
+        "headline-lg-mobile": ["Montserrat", "sans-serif"],
+        "price-display": ["Montserrat", "sans-serif"],
+        "serif": ["Lora", "serif"]
       },
       "fontSize": {
         "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],

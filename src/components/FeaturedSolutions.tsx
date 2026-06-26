@@ -9,27 +9,27 @@ export default function FeaturedSolutions() {
   const services = [
     {
       title: 'Motor Gear Box',
-      desc: 'Moti Equipments is a prime dealer of Motor & Gear Boxes. We have a wide range of brands all in ready stock & can be delivered immediately.',
+      desc: 'HITECH ENGINEERING is a prime dealer of Motor & Gear Boxes. We have a wide range of brands all in ready stock & can be delivered immediately.',
       img: 'https://motiequipments.com/assets/images/services/motors.jpg',
     },
     {
       title: 'Wheel',
-      desc: 'Moti Equipment deals with all kind of MHE Wheels, all sizes of wheels are readily available at a very affordable price.',
+      desc: 'HITECH ENGINEERING deals with all kind of MHE Wheels, all sizes of wheels are readily available at a very affordable price.',
       img: 'https://motiequipments.com/assets/images/services/wheels.jpg',
     },
     {
       title: 'Rollers & Pulleys',
-      desc: 'Moti Equipments have their own in-house team who manufacture Rollers, Pulleys & Idlers for their own equipment purposes & sales as spares. The quality & performance is top notch.',
+      desc: 'HITECH ENGINEERING have their own in-house team who manufacture Rollers, Pulleys & Idlers for their own equipment purposes & sales as spares. The quality & performance is top notch.',
       img: 'https://motiequipments.com/assets/images/services/rollers.jpg',
     },
     {
       title: 'Conveyor Belts',
-      desc: 'Moti Equipment is a major dealer & Stockist of all kinds of conveyor belts. We have ready stock goods available of all standard & non-standard sizes.',
+      desc: 'HITECH ENGINEERING is a major dealer & Stockist of all kinds of conveyor belts. We have ready stock goods available of all standard & non-standard sizes.',
       img: 'https://motiequipments.com/assets/images/services/conveyor.jpg',
     },
     {
       title: 'Bearings',
-      desc: 'Moti Equipment is a major dealer & Stockist of all kinds & all brands of bearings. We have ready stock goods available of all standard sizes.',
+      desc: 'HITECH ENGINEERING is a major dealer & Stockist of all kinds & all brands of bearings. We have ready stock goods available of all standard sizes.',
       img: 'https://motiequipments.com/assets/images/services/bearings.jpg',
     },
   ];
@@ -43,7 +43,7 @@ export default function FeaturedSolutions() {
               Industrial Material<br />Handling Solutions<span className="text-industrial-yellow">.</span>
             </h2>
             <p className="font-body-md text-[16px] text-on-surface-variant italic">
-              Apart From MHE Manufacturing, Moti Equipments deals in supply of all kind of conveyor equipment spare sales & services.
+              Apart From MHE Manufacturing, HITECH ENGINEERING deals in supply of all kind of conveyor equipment spare sales & services.
             </p>
           </div>
           <div className="flex gap-4 items-center mt-6 lg:mt-0">

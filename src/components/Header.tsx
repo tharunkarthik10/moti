@@ -32,12 +32,6 @@ export default function Header() {
             className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors relative nav-underline-effect"
             href="#"
           >
-            Our Projects
-          </a>
-          <a
-            className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors relative nav-underline-effect"
-            href="#"
-          >
             Blog
           </a>
           <a
