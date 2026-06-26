@@ -2,7 +2,7 @@ export default function ContactBanner() {
   return (
     <section className="bg-stark-white w-full py-10 mt-16 overflow-visible">
       <div className="max-w-container-max mx-auto px-gutter">
-        <div className="relative bg-[#FFC107] rounded-sm flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 md:py-12">
+        <div className="relative bg-[#00AEEF] rounded-sm flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 md:py-12">
           
           {/* Man Image Overflowing Top */}
           <div className="absolute left-0 bottom-0 hidden md:block w-64 lg:w-80 z-10 pointer-events-none">

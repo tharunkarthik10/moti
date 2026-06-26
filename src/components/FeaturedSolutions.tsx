@@ -47,10 +47,10 @@ export default function FeaturedSolutions() {
             </p>
           </div>
           <div className="flex gap-4 items-center mt-6 lg:mt-0">
-            <button className="feat-prev w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-industrial-yellow transition-all rounded-full disabled:opacity-50">
+            <button className="feat-prev w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-[#5F6B76] hover:text-white transition-all rounded-full disabled:opacity-50">
               <span className="material-symbols-outlined text-[20px]">chevron_left</span>
             </button>
-            <button className="feat-next w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-industrial-yellow transition-all rounded-full disabled:opacity-50">
+            <button className="feat-next w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-[#5F6B76] hover:text-white transition-all rounded-full disabled:opacity-50">
               <span className="material-symbols-outlined text-[20px]">chevron_right</span>
             </button>
           </div>

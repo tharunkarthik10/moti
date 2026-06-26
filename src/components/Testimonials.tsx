@@ -15,8 +15,8 @@ export default function Testimonials() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
             <div className="bg-stark-white p-10 border border-outline-variant relative group hover:border-industrial-yellow transition-colors shadow-sm">
-              <div className="absolute -top-6 left-10 w-12 h-12 bg-industrial-yellow flex items-center justify-center">
-                <span className="material-symbols-outlined text-on-surface text-[24px]">format_quote</span>
+              <div className="absolute -top-6 left-10 w-12 h-12 bg-[#0a192f] flex items-center justify-center">
+                <span className="material-symbols-outlined text-white text-[24px]">format_quote</span>
               </div>
               <p className="font-body-md text-on-surface-variant mb-8 italic">
                 "The company's experts have accumulated valuable experience in green development, being savvy to all aspects of the certification process and requirements."
@@ -33,8 +33,8 @@ export default function Testimonials() {
             </div>
             {/* Testimonial 2 */}
             <div className="bg-stark-white p-10 border border-outline-variant relative group hover:border-industrial-yellow transition-colors shadow-sm">
-              <div className="absolute -top-6 left-10 w-12 h-12 bg-industrial-yellow flex items-center justify-center">
-                <span className="material-symbols-outlined text-on-surface text-[24px]">format_quote</span>
+              <div className="absolute -top-6 left-10 w-12 h-12 bg-[#0a192f] flex items-center justify-center">
+                <span className="material-symbols-outlined text-white text-[24px]">format_quote</span>
               </div>
               <p className="font-body-md text-on-surface-variant mb-8 italic">
                 "The skills of our project managers are attested by international certificates from leading overseas professional associations in the realm of construction."
@@ -51,8 +51,8 @@ export default function Testimonials() {
             </div>
             {/* Testimonial 3 */}
             <div className="bg-stark-white p-10 border border-outline-variant relative group hover:border-industrial-yellow transition-colors shadow-sm">
-              <div className="absolute -top-6 left-10 w-12 h-12 bg-industrial-yellow flex items-center justify-center">
-                <span className="material-symbols-outlined text-on-surface text-[24px]">format_quote</span>
+              <div className="absolute -top-6 left-10 w-12 h-12 bg-[#0a192f] flex items-center justify-center">
+                <span className="material-symbols-outlined text-white text-[24px]">format_quote</span>
               </div>
               <p className="font-body-md text-on-surface-variant mb-8 italic">
                 "Yellow Hats Group carries out full-cycle development, including the attraction of investments, construction and managing premium residential properties."

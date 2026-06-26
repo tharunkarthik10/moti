@@ -4,9 +4,9 @@ export default function Header() {
       <nav className="flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto">
         <a href="/" className="flex items-center gap-3">
           <img 
-            src="/final_combined_logo_transparent.png" 
-            alt="Moti Equipments" 
-            className="h-[63px] md:h-[81px] w-auto max-w-none flex-shrink-0 object-contain contrast-125 saturate-110 drop-shadow-sm brightness-105"
+            src="/hitech_logo.png" 
+            alt="Hitech" 
+            className="h-[63px] md:h-[81px] w-auto max-w-none flex-shrink-0 object-contain drop-shadow-sm brightness-105"
           />
         </a>
         <div className="hidden md:flex items-center gap-8">
@@ -53,7 +53,7 @@ export default function Header() {
             <span className="material-symbols-outlined text-[16px]">person</span> Login
           </a>
         </div>
-        <button className="bg-industrial-yellow text-on-surface px-6 py-2 font-label-caps text-label-caps border-b-4 border-primary hover:translate-y-[-2px] transition-transform duration-200">
+        <button className="bg-[#5F6B76] text-white px-6 py-2 font-label-caps text-label-caps hover:bg-[#4a555e] border-b-4 border-primary hover:translate-y-[-2px] transition-transform duration-200">
           Request Quote
         </button>
       </nav>

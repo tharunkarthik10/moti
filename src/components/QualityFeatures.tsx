@@ -39,7 +39,7 @@ export default function QualityFeatures() {
         {/* MOBILE LAYOUT (Hidden on Desktop) */}
         <div className="md:hidden flex flex-col items-center space-y-12 mt-10">
           <div className="flex flex-col items-center text-center space-y-3">
-            <div className="w-16 h-16 bg-industrial-yellow text-on-surface flex items-center justify-center rounded-full shadow-lg">
+            <div className="w-16 h-16 bg-[#0a192f] text-white flex items-center justify-center rounded-full shadow-lg">
               <span className="material-symbols-outlined text-3xl">star</span>
             </div>
             <h3 className="font-status-code text-industrial-yellow tracking-widest uppercase text-sm">Why Moti Equipments</h3>
@@ -110,7 +110,7 @@ export default function QualityFeatures() {
             
             {/* Top Center: 90 degrees */}
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center z-20">
-              <div className="w-16 h-16 bg-industrial-yellow text-on-surface flex items-center justify-center rounded-full shadow-[0_10px_20px_rgba(242,169,0,0.4)]">
+              <div className="w-16 h-16 bg-[#0a192f] text-white flex items-center justify-center rounded-full shadow-lg">
                 <span className="material-symbols-outlined text-3xl">star</span>
               </div>
               {/* Text positioned ABOVE the icon */}
