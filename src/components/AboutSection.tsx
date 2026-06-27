@@ -23,36 +23,105 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-body-md">
           {/* Mission */}
-          <div className="bg-white p-8 border border-outline/20 border-t-[3px] border-t-[#00aeef] shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex flex-col space-y-6">
-            <div className="w-12 h-12 bg-[#f4f5f6] flex items-center justify-center">
-              <span className="material-symbols-outlined text-[#1a1a1a]">adjust</span>
+          <div className="bg-white flex flex-col group overflow-hidden rounded-[24px] border border-gray-200">
+            <div className="relative w-full h-48 bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] overflow-hidden flex items-center justify-center">
+              <span className="material-symbols-outlined text-[120px] text-gray-300/40 group-hover:scale-110 transition-transform duration-500">adjust</span>
+              
+              {/* Tab */}
+              <div className="absolute bottom-0 left-8 bg-white px-5 py-2 rounded-t-[16px] z-10 flex items-center justify-center">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[#3FC1B6] text-[18px]">adjust</span>
+                  <span className="text-[13px] text-gray-500 font-medium tracking-wide uppercase">Mission</span>
+                </div>
+                
+                <div 
+                  className="absolute -left-4 bottom-0 w-4 h-4 bg-transparent rounded-br-[16px]"
+                  style={{ boxShadow: '5px 5px 0 5px white' }}
+                ></div>
+                
+                <div 
+                  className="absolute -right-4 bottom-0 w-4 h-4 bg-transparent rounded-bl-[16px]"
+                  style={{ boxShadow: '-5px 5px 0 5px white' }}
+                ></div>
+              </div>
             </div>
-            <h3 className="font-headline-lg text-[22px] font-bold text-[#1a1a1a]">Our Mission</h3>
-            <p className="text-[#5a5a5a] text-[15px] leading-relaxed">
-              To empower industries with superior material handling equipment that enhances operational efficiency and safety through innovative design and manufacturing excellence.
-            </p>
+
+            <div className="p-6 md:p-8 flex flex-col flex-grow">
+              <h3 className="font-headline-md text-[20px] md:text-[22px] font-bold text-gray-900 mb-3 leading-snug">
+                Our Mission
+              </h3>
+              <p className="font-body-md text-[15px] text-gray-600 leading-relaxed">
+                To empower industries with superior material handling equipment that enhances operational efficiency and safety through innovative design and manufacturing excellence.
+              </p>
+            </div>
           </div>
 
           {/* Vision */}
-          <div className="bg-white p-8 border border-outline/20 border-t-[3px] border-t-[#00aeef] shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex flex-col space-y-6">
-            <div className="w-12 h-12 bg-[#f4f5f6] flex items-center justify-center">
-              <span className="material-symbols-outlined text-[#1a1a1a]">visibility</span>
+          <div className="bg-white flex flex-col group overflow-hidden rounded-[24px] border border-gray-200">
+            <div className="relative w-full h-48 bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] overflow-hidden flex items-center justify-center">
+              <span className="material-symbols-outlined text-[120px] text-gray-300/40 group-hover:scale-110 transition-transform duration-500">visibility</span>
+              
+              {/* Tab */}
+              <div className="absolute bottom-0 left-8 bg-white px-5 py-2 rounded-t-[16px] z-10 flex items-center justify-center">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[#3FC1B6] text-[18px]">visibility</span>
+                  <span className="text-[13px] text-gray-500 font-medium tracking-wide uppercase">Vision</span>
+                </div>
+                
+                <div 
+                  className="absolute -left-4 bottom-0 w-4 h-4 bg-transparent rounded-br-[16px]"
+                  style={{ boxShadow: '5px 5px 0 5px white' }}
+                ></div>
+                
+                <div 
+                  className="absolute -right-4 bottom-0 w-4 h-4 bg-transparent rounded-bl-[16px]"
+                  style={{ boxShadow: '-5px 5px 0 5px white' }}
+                ></div>
+              </div>
             </div>
-            <h3 className="font-headline-lg text-[22px] font-bold text-[#1a1a1a]">Our Vision</h3>
-            <p className="text-[#5a5a5a] text-[15px] leading-relaxed">
-              To be the global leader in kinetic precision engineering, setting the benchmark for quality, reliability, and sustainability in the material handling industry.
-            </p>
+
+            <div className="p-6 md:p-8 flex flex-col flex-grow">
+              <h3 className="font-headline-md text-[20px] md:text-[22px] font-bold text-gray-900 mb-3 leading-snug">
+                Our Vision
+              </h3>
+              <p className="font-body-md text-[15px] text-gray-600 leading-relaxed">
+                To be the global leader in kinetic precision engineering, setting the benchmark for quality, reliability, and sustainability in the material handling industry.
+              </p>
+            </div>
           </div>
 
           {/* Strategy */}
-          <div className="bg-white p-8 border border-outline/20 border-t-[3px] border-t-[#00aeef] shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex flex-col space-y-6">
-            <div className="w-12 h-12 bg-[#f4f5f6] flex items-center justify-center">
-              <span className="material-symbols-outlined text-[#1a1a1a]">trending_up</span>
+          <div className="bg-white flex flex-col group overflow-hidden rounded-[24px] border border-gray-200">
+            <div className="relative w-full h-48 bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] overflow-hidden flex items-center justify-center">
+              <span className="material-symbols-outlined text-[120px] text-gray-300/40 group-hover:scale-110 transition-transform duration-500">trending_up</span>
+              
+              {/* Tab */}
+              <div className="absolute bottom-0 left-8 bg-white px-5 py-2 rounded-t-[16px] z-10 flex items-center justify-center">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[#3FC1B6] text-[18px]">trending_up</span>
+                  <span className="text-[13px] text-gray-500 font-medium tracking-wide uppercase">Strategy</span>
+                </div>
+                
+                <div 
+                  className="absolute -left-4 bottom-0 w-4 h-4 bg-transparent rounded-br-[16px]"
+                  style={{ boxShadow: '5px 5px 0 5px white' }}
+                ></div>
+                
+                <div 
+                  className="absolute -right-4 bottom-0 w-4 h-4 bg-transparent rounded-bl-[16px]"
+                  style={{ boxShadow: '-5px 5px 0 5px white' }}
+                ></div>
+              </div>
             </div>
-            <h3 className="font-headline-lg text-[22px] font-bold text-[#1a1a1a]">Our Strategy</h3>
-            <p className="text-[#5a5a5a] text-[15px] leading-relaxed">
-              Focusing on R&D, strategic partnerships, and customer-centric solutions to deliver high-impact engineering assets that solve complex logistical challenges.
-            </p>
+
+            <div className="p-6 md:p-8 flex flex-col flex-grow">
+              <h3 className="font-headline-md text-[20px] md:text-[22px] font-bold text-gray-900 mb-3 leading-snug">
+                Our Strategy
+              </h3>
+              <p className="font-body-md text-[15px] text-gray-600 leading-relaxed">
+                Focusing on R&D, strategic partnerships, and customer-centric solutions to deliver high-impact engineering assets that solve complex logistical challenges.
+              </p>
+            </div>
           </div>
         </div>
       </div>

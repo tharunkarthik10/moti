@@ -74,21 +74,46 @@ export default function FeaturedSolutions() {
           className="servicesSwiper overflow-visible cursor-grab active:cursor-grabbing"
         >
           {services.map((service, idx) => (
-            <SwiperSlide key={idx} className="bg-stark-white flex flex-col group overflow-hidden">
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-xl">
+            <SwiperSlide key={idx} className="bg-white flex flex-col group overflow-hidden rounded-[24px] border border-gray-200">
+              <div className="relative w-full aspect-[4/3] md:aspect-[3/2] overflow-hidden">
                 <img
                   src={service.img}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                
+                {/* Date Tab */}
+                <div className="absolute bottom-0 left-8 bg-white px-5 py-2 rounded-t-[16px] z-10 flex items-center justify-center">
+                  <span className="text-[13px] text-gray-500 font-medium">
+                    May {10 + idx}, 2026
+                  </span>
+                  
+                  {/* Left curve */}
+                  <div 
+                    className="absolute -left-4 bottom-0 w-4 h-4 bg-transparent rounded-br-[16px]"
+                    style={{ boxShadow: '5px 5px 0 5px white' }}
+                  ></div>
+                  
+                  {/* Right curve */}
+                  <div 
+                    className="absolute -right-4 bottom-0 w-4 h-4 bg-transparent rounded-bl-[16px]"
+                    style={{ boxShadow: '-5px 5px 0 5px white' }}
+                  ></div>
+                </div>
               </div>
-              <div className="pt-6 pb-2 px-2 flex flex-col flex-grow">
-                <h3 className="font-label-caps text-[16px] font-bold text-on-surface uppercase mb-3">
+
+              <div className="p-6 md:p-8 flex flex-col flex-grow">
+                <h3 className="font-headline-md text-[20px] md:text-[22px] font-bold text-gray-900 mb-3 leading-snug">
                   {service.title}
                 </h3>
-                <p className="font-body-md text-[14px] text-on-surface-variant leading-relaxed">
+                <p className="font-body-md text-[15px] text-gray-600 leading-relaxed mb-8 line-clamp-3">
                   {service.desc}
                 </p>
+                <div className="mt-auto">
+                  <button className="text-[#3FC1B6] font-semibold text-[13px] uppercase underline underline-offset-4 decoration-1 hover:text-gray-900 transition-colors">
+                    READ MORE
+                  </button>
+                </div>
               </div>
             </SwiperSlide>
           ))}

@@ -71,7 +71,7 @@ export default {
       "spacing": {
         "gutter": "24px",
         "container-max": "1280px",
-        "section-padding": "80px",
+        "section-padding": "64px",
         "margin-mobile": "16px",
         "unit": "8px"
       },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
@@ -13,7 +13,6 @@ export default function HeroSlider() {
     <section className="relative w-full overflow-visible">
       <div className="relative max-w-container-max mx-auto">
         <Swiper
-          className="!overflow-visible"
           onSwiper={setSwiperInstance}
           modules={[Navigation, Autoplay, EffectFade]}
           effect="fade"
@@ -28,7 +27,7 @@ export default function HeroSlider() {
             prevEl: '.hero-prev',
           }}
           loop={true}
-          className="heroSwiper w-full min-h-[calc(100vh-180px)]"
+          className="!overflow-visible heroSwiper w-full min-h-[calc(100vh-180px)]"
         >
           {/* Slide 1 */}
           <SwiperSlide className="bg-transparent">
